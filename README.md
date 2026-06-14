@@ -6,7 +6,6 @@ Live site: deploy to [Vercel](https://vercel.com) from this repository.
 
 ## Stack
 
-
 | Layer | Choice |
 |-------|--------|
 | Runtime | Node 22 LTS |
