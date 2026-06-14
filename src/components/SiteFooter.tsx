@@ -37,8 +37,17 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-[var(--color-border)] pt-6 text-xs text-[var(--color-muted-foreground)]">
+        <div className="mt-10 border-t border-[var(--color-border)] pt-6 text-xs text-[var(--color-muted-foreground)] sm:flex sm:items-center sm:justify-between">
           <p>© {year} European AI Freedom. Informational — not legal advice.</p>
+          <p className="mt-2 sm:mt-0">
+            <Link href="/guides" className="text-[var(--color-copper)] hover:underline">
+              Guides
+            </Link>
+            {" · "}
+            <Link href="/#contribute" className="hover:underline">
+              Contribute
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

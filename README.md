@@ -16,6 +16,13 @@ Live site: deploy to [Vercel](https://vercel.com) from this repository.
 | Hosting | Vercel |
 | Validation | Zod 4 |
 
+## Guides
+
+| Guide | Path |
+|-------|------|
+| Start a European AI company | `/guides/start-ai-company` |
+| Build a European Claude on Mistral | `/guides/european-claude` |
+
 ## Local development
 
 ```bash

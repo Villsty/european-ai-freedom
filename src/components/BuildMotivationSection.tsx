@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   buildOpportunities,
   buildReasons,
@@ -120,17 +121,23 @@ export function BuildMotivationSection() {
           </ol>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#categories"
+            <Link
+              href="/guides/start-ai-company"
               className="inline-flex items-center rounded-[var(--radius)] bg-[var(--color-copper)] px-5 py-2.5 text-sm font-medium text-[var(--color-background)] transition-opacity hover:opacity-90"
             >
-              See what others already built
-            </a>
-            <a
-              href="#contribute"
+              Start an AI company
+            </Link>
+            <Link
+              href="/guides/european-claude"
               className="inline-flex items-center rounded-[var(--radius)] border border-[var(--color-border)] px-5 py-2.5 text-sm font-medium text-[var(--color-foreground)] transition-colors hover:border-[var(--color-copper)]"
             >
-              Add your project when it ships
+              Build a European Claude
+            </Link>
+            <a
+              href="#categories"
+              className="inline-flex items-center rounded-[var(--radius)] border border-[var(--color-border)] px-5 py-2.5 text-sm font-medium text-[var(--color-foreground)] transition-colors hover:border-[var(--color-muted-foreground)]"
+            >
+              See what others already built
             </a>
           </div>
         </div>
