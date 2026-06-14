@@ -10,23 +10,29 @@ export function HeroSection() {
     <section className="grain relative overflow-hidden px-5 pb-16 pt-14 sm:px-8 sm:pb-24 sm:pt-20">
       <div className="mx-auto max-w-6xl">
         <p className="animate-fade-up font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.2em] text-[var(--color-copper)]">
-          Sovereign developer guide
+          Catalog · rallying cry · builder guide
         </p>
 
         <h1 className="animate-fade-up-delay-1 mt-5 max-w-3xl font-[family-name:var(--font-display)] text-4xl font-medium leading-[1.1] tracking-tight text-[var(--color-foreground)] sm:text-5xl lg:text-6xl">
-          Build with European alternatives to US tech stacks
+          Use European AI. Build what is still missing.
         </h1>
 
         <p className="animate-fade-up-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-[var(--color-muted-foreground)] sm:text-lg">
-          A practical catalog for developers who want GDPR-aligned infrastructure,
-          EU-headquartered vendors, and open-source escape hatches — without
-          pretending geography solves every compliance question.
+          A practical guide for developers who want GDPR-aligned infrastructure
+          and EU-headquartered vendors — and a push for the builders who will
+          create the alternatives that do not exist yet.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="#categories"
+            href="#build"
             className="inline-flex items-center rounded-[var(--radius)] bg-[var(--color-copper)] px-5 py-2.5 text-sm font-medium text-[var(--color-background)] transition-opacity hover:opacity-90"
+          >
+            Why you should build
+          </a>
+          <a
+            href="#categories"
+            className="inline-flex items-center rounded-[var(--radius)] border border-[var(--color-border)] px-5 py-2.5 text-sm font-medium text-[var(--color-foreground)] transition-colors hover:border-[var(--color-muted-foreground)]"
           >
             Browse {categories.length} categories
           </a>
@@ -65,10 +71,10 @@ export function HeroSection() {
           </div>
           <div>
             <dt className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-wider text-[var(--color-muted-foreground)]">
-              Stance
+              Mission
             </dt>
             <dd className="mt-1 font-[family-name:var(--font-display)] text-3xl text-[var(--color-foreground)]">
-              Pragmatic
+              Build
             </dd>
           </div>
         </dl>

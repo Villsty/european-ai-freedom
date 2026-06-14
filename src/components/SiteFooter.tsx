@@ -15,9 +15,9 @@ export function SiteFooter() {
               Help this list stay current
             </h2>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-[var(--color-muted-foreground)]">
-              European sovereignty in software is a moving target. Open a pull
-              request on GitHub to add alternatives, fix HQ details, or flag
-              providers that no longer meet EU hosting claims.
+              European sovereignty in software is a moving target. Ship something
+              new — then open a pull request to list it here. Or fix HQ details
+              and hosting claims for tools already on the page.
             </p>
           </div>
 

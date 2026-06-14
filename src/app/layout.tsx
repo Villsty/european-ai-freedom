@@ -25,16 +25,16 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "European AI Freedom — Sovereign dev stack guide",
+    default: "European AI Freedom — Build sovereign alternatives",
     template: "%s · European AI Freedom",
   },
   description:
-    "A curated guide to European alternatives for AI, cloud, auth, analytics, and developer tooling — built for teams who want data sovereignty without sacrificing DX.",
+    "A motivational guide and catalog for European AI independence — discover EU alternatives, find open gaps, and start building what US tech has not shipped for you.",
   metadataBase: new URL("https://european-ai-freedom.vercel.app"),
   openGraph: {
     title: "European AI Freedom",
     description:
-      "European alternatives to US tech stacks — AI, cloud, auth, and more.",
+      "Use European AI. Build what is still missing. A guide for sovereign developers and founders.",
     type: "website",
     locale: "en_GB",
   },

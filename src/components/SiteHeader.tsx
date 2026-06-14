@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const navItems = [
+  { href: "#build", label: "Build" },
   { href: "#categories", label: "Categories" },
   { href: "#principles", label: "Principles" },
   { href: "#contribute", label: "Contribute" },
@@ -38,10 +39,10 @@ export function SiteHeader() {
         </nav>
 
         <Link
-          href="#categories"
+          href="#build"
           className="rounded-[var(--radius)] border border-[var(--color-border)] bg-[var(--color-muted)] px-3 py-1.5 text-xs font-medium text-[var(--color-foreground)] transition-colors hover:border-[var(--color-copper)] sm:text-sm"
         >
-          Explore stack
+          Start building
         </Link>
       </div>
     </header>
