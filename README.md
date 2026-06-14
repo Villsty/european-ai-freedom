@@ -2,7 +2,9 @@
 
 A curated developer guide to **European alternatives** for AI, cloud, auth, analytics, email, payments, dev tools, and search — built for teams who want data sovereignty without sacrificing developer experience.
 
-Live site: deploy to [Vercel](https://vercel.com) from this repository.
+**License:** [MIT](LICENSE) · **Security:** see [SECURITY.md](SECURITY.md)
+
+Live site: [european-ai-freedom.vercel.app](https://european-ai-freedom.vercel.app)
 
 ## Stack
 
@@ -62,4 +64,6 @@ No environment variables required for the static catalog site.
 
 ## Disclaimer
 
-This site is informational. Vendor HQ, hosting regions, and legal exposure change. Always verify DPAs, subprocessors, and data flows for your workload.
+This site is **informational only — not legal advice**. Vendor HQ, hosting regions,
+acquisition status, and legal exposure change. Always verify DPAs, subprocessors,
+and data flows for your workload before choosing or building on any listed tool.

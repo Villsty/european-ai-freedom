@@ -1,7 +1,8 @@
 {
   "name": "european-ai-freedom",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "description": "A developer guide to European alternatives to US tech stacks",
   "packageManager": "pnpm@10.28.2",
   "engines": {
