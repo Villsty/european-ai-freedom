@@ -65,17 +65,32 @@ export function AlternativeCard({ alternative }: AlternativeCardProps) {
         ))}
       </div>
 
-      <a
-        href={alternative.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-5 inline-flex w-fit items-center gap-1 text-sm font-medium text-[var(--color-copper)] transition-colors hover:text-[var(--color-foreground)]"
-      >
-        Visit site
-        <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
-          →
-        </span>
-      </a>
+      <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <a
+          href={alternative.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex w-fit items-center gap-1 text-sm font-medium text-[var(--color-copper)] transition-colors hover:text-[var(--color-foreground)]"
+        >
+          Visit site
+          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
+            →
+          </span>
+        </a>
+        {alternative.repoUrl ? (
+          <a
+            href={alternative.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center gap-1 text-sm font-medium text-[var(--color-sovereign-light)] transition-colors hover:text-[var(--color-foreground)]"
+          >
+            Source code
+            <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
+              ↗
+            </span>
+          </a>
+        ) : null}
+      </div>
     </article>
   );
 }
