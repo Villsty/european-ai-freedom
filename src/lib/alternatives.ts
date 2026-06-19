@@ -19,6 +19,8 @@ export type Alternative = {
   replaces: string;
   summary: string;
   url: string;
+  /** Public source-code or open-weights repository, when the project is open. */
+  repoUrl?: string;
   tags: string[];
   euHosted: boolean;
   openSource: boolean;
@@ -47,6 +49,7 @@ export const categories: Category[] = [
         summary:
           "Frontier open and commercial models with EU data residency options and strong multilingual performance.",
         url: "https://mistral.ai",
+        repoUrl: "https://github.com/mistralai",
         tags: ["LLM", "API", "Open weights"],
         euHosted: true,
         openSource: true,
@@ -69,6 +72,7 @@ export const categories: Category[] = [
         summary:
           "Open model registry, inference endpoints, and Spaces — the commons layer for European AI builders.",
         url: "https://huggingface.co",
+        repoUrl: "https://github.com/huggingface",
         tags: ["Hub", "Inference", "Community"],
         euHosted: true,
         openSource: true,
@@ -102,6 +106,7 @@ export const categories: Category[] = [
         summary:
           "FLUX image and video generation models — European HQ for generative media with open-weight options.",
         url: "https://blackforestlabs.ai",
+        repoUrl: "https://github.com/black-forest-labs/flux",
         tags: ["Image", "Video", "Generative"],
         euHosted: true,
         openSource: true,
@@ -124,6 +129,7 @@ export const categories: Category[] = [
         summary:
           "Non-profit AI lab behind Moshi (real-time voice) and open research — European alternative to closed audio models.",
         url: "https://kyutai.org",
+        repoUrl: "https://github.com/kyutai-labs/moshi",
         tags: ["Research", "Voice", "Open science"],
         euHosted: true,
         openSource: true,
@@ -135,6 +141,7 @@ export const categories: Category[] = [
         summary:
           "Fully open models trained on public-domain and open data — strict transparency for EU public-sector procurement.",
         url: "https://pleias.fr",
+        repoUrl: "https://huggingface.co/PleIAs",
         tags: ["Open data", "Public domain", "LLM"],
         euHosted: true,
         openSource: true,
@@ -146,6 +153,7 @@ export const categories: Category[] = [
         summary:
           "European AI lab and OpenEuroLLM contributor — multilingual sovereign models and enterprise AI engineering.",
         url: "https://www.silo.ai",
+        repoUrl: "https://huggingface.co/LumiOpen",
         tags: ["Consulting", "OpenEuroLLM", "Multilingual"],
         euHosted: true,
         openSource: true,
@@ -168,6 +176,7 @@ export const categories: Category[] = [
         summary:
           "Open-weight image, video, and 3D models — deploy on EU infrastructure for creative and media pipelines.",
         url: "https://stability.ai",
+        repoUrl: "https://github.com/Stability-AI",
         tags: ["Image", "Open weights", "Media"],
         euHosted: true,
         openSource: true,
@@ -190,6 +199,7 @@ export const categories: Category[] = [
         summary:
           "Pan-European sovereign LLM initiative covering all EU languages — first models targeted from 2026.",
         url: "https://openeurollm.eu",
+        repoUrl: "https://github.com/OpenEuroLLM",
         tags: ["Consortium", "Multilingual", "Sovereign"],
         euHosted: true,
         openSource: true,
@@ -285,6 +295,7 @@ export const categories: Category[] = [
         summary:
           "Open-source IAM with OIDC, SAML, and social login — self-host on any EU cloud for full control.",
         url: "https://www.keycloak.org",
+        repoUrl: "https://github.com/keycloak/keycloak",
         tags: ["OIDC", "SAML", "Self-hosted"],
         euHosted: true,
         openSource: true,
@@ -296,6 +307,7 @@ export const categories: Category[] = [
         summary:
           "Cloud-native identity with passkeys, machine-to-machine auth, and Swiss/EU hosting options.",
         url: "https://zitadel.com",
+        repoUrl: "https://github.com/zitadel/zitadel",
         tags: ["Passkeys", "B2B", "SaaS or self-host"],
         euHosted: true,
         openSource: true,
@@ -307,6 +319,7 @@ export const categories: Category[] = [
         summary:
           "Postgres-backed auth with RLS — deploy projects in Frankfurt or other EU regions via Supabase.",
         url: "https://supabase.com",
+        repoUrl: "https://github.com/supabase/auth",
         tags: ["Postgres", "RLS", "EU region"],
         euHosted: true,
         openSource: true,
@@ -318,6 +331,7 @@ export const categories: Category[] = [
         summary:
           "Modern open-source identity provider with OIDC, SAML, and LDAP — popular self-hosted EU alternative.",
         url: "https://goauthentik.io",
+        repoUrl: "https://github.com/goauthentik/authentik",
         tags: ["OIDC", "SAML", "Self-hosted"],
         euHosted: true,
         openSource: true,
@@ -338,6 +352,7 @@ export const categories: Category[] = [
         summary:
           "Lightweight, GDPR-compliant web analytics — no cookies, no personal data collection.",
         url: "https://plausible.io",
+        repoUrl: "https://github.com/plausible/analytics",
         tags: ["Privacy", "Cookieless", "SaaS"],
         euHosted: true,
         openSource: true,
@@ -349,6 +364,7 @@ export const categories: Category[] = [
         summary:
           "Full-featured analytics you can self-host in the EU — GDPR and ePrivacy built in.",
         url: "https://matomo.org",
+        repoUrl: "https://github.com/matomo-org/matomo",
         tags: ["Self-host", "GDPR", "Enterprise"],
         euHosted: true,
         openSource: true,
@@ -360,6 +376,7 @@ export const categories: Category[] = [
         summary:
           "Simple, self-hosted analytics with a clean dashboard — ideal for indie SaaS and docs sites.",
         url: "https://umami.is",
+        repoUrl: "https://github.com/umami-software/umami",
         tags: ["Self-host", "Minimal", "Open source"],
         euHosted: true,
         openSource: true,
@@ -486,6 +503,7 @@ export const categories: Category[] = [
         summary:
           "All-in-one DevSecOps platform — EU SaaS or self-managed on your own EU infrastructure.",
         url: "https://about.gitlab.com",
+        repoUrl: "https://gitlab.com/gitlab-org/gitlab",
         tags: ["Git", "CI/CD", "Self-managed"],
         euHosted: true,
         openSource: true,
@@ -495,9 +513,10 @@ export const categories: Category[] = [
         hq: "Berlin, Germany",
         replaces: "GitHub for open source",
         summary:
-          "Non-profit Git forge running Gitea — European home for FOSS projects without US legal exposure.",
+          "Non-profit Git forge running Forgejo — European home for FOSS projects without US legal exposure.",
         url: "https://codeberg.org",
-        tags: ["FOSS", "Gitea", "Non-profit"],
+        repoUrl: "https://codeberg.org/forgejo/forgejo",
+        tags: ["FOSS", "Forgejo", "Non-profit"],
         euHosted: true,
         openSource: true,
       },
@@ -508,6 +527,7 @@ export const categories: Category[] = [
         summary:
           "Lightweight CI engine compatible with GitHub, GitLab, and Gitea — run pipelines on EU runners.",
         url: "https://woodpecker-ci.org",
+        repoUrl: "https://github.com/woodpecker-ci/woodpecker",
         tags: ["CI", "Self-host", "Containers"],
         euHosted: true,
         openSource: true,
@@ -517,8 +537,9 @@ export const categories: Category[] = [
         hq: "Open source / EU self-host",
         replaces: "GitHub Enterprise self-hosted",
         summary:
-          "Lightweight Git forge — backbone of Codeberg and many EU sovereign dev environments.",
+          "Lightweight Git forge — basis for Forgejo/Codeberg and many EU sovereign dev environments.",
         url: "https://about.gitea.com",
+        repoUrl: "https://github.com/go-gitea/gitea",
         tags: ["Git", "Self-host", "Lightweight"],
         euHosted: true,
         openSource: true,
@@ -539,6 +560,7 @@ export const categories: Category[] = [
         summary:
           "Typo-tolerant instant search — open core with cloud or self-host on EU infrastructure.",
         url: "https://www.meilisearch.com",
+        repoUrl: "https://github.com/meilisearch/meilisearch",
         tags: ["Instant search", "Typo-tolerant", "SDKs"],
         euHosted: true,
         openSource: true,
@@ -550,6 +572,7 @@ export const categories: Category[] = [
         summary:
           "Fast, batteries-included search engine — single binary, easy to run on Hetzner or Scaleway.",
         url: "https://typesense.org",
+        repoUrl: "https://github.com/typesense/typesense",
         tags: ["Self-host", "Fast", "Simple ops"],
         euHosted: true,
         openSource: true,
@@ -561,6 +584,7 @@ export const categories: Category[] = [
         summary:
           "Vector database for RAG and semantic search — cloud or self-hosted with EU data residency.",
         url: "https://qdrant.tech",
+        repoUrl: "https://github.com/qdrant/qdrant",
         tags: ["Vectors", "RAG", "Rust"],
         euHosted: true,
         openSource: true,
@@ -572,6 +596,7 @@ export const categories: Category[] = [
         summary:
           "Open-source vector database with hybrid search — self-host in EU or use Weaviate Cloud EU regions.",
         url: "https://weaviate.io",
+        repoUrl: "https://github.com/weaviate/weaviate",
         tags: ["Vectors", "Hybrid search", "GraphQL"],
         euHosted: true,
         openSource: true,

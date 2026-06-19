@@ -282,6 +282,88 @@ python -m vllm.entrypoints.openai.api_server \\
         providers before budgeting.
       </p>
 
+      <h2>Open-source building blocks</h2>
+      <p>
+        Every layer above can be assembled from open code and open weights you
+        can read, fork, and self-host on European infrastructure. Start from
+        these repositories rather than a closed SDK:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Layer</th>
+            <th>Project</th>
+            <th>Repository</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Models &amp; weights</td>
+            <td>Mistral AI</td>
+            <td>
+              <a href="https://github.com/mistralai">github.com/mistralai</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Model hub &amp; tooling</td>
+            <td>Hugging Face</td>
+            <td>
+              <a href="https://github.com/huggingface">github.com/huggingface</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Inference serving</td>
+            <td>vLLM</td>
+            <td>
+              <a href="https://github.com/vllm-project/vllm">
+                github.com/vllm-project/vllm
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Fine-tuning</td>
+            <td>PEFT · Axolotl</td>
+            <td>
+              <a href="https://github.com/huggingface/peft">huggingface/peft</a>
+              {" · "}
+              <a href="https://github.com/axolotl-ai-cloud/axolotl">
+                axolotl-ai-cloud/axolotl
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Vector store (RAG)</td>
+            <td>Qdrant</td>
+            <td>
+              <a href="https://github.com/qdrant/qdrant">github.com/qdrant/qdrant</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Auth &amp; gateway identity</td>
+            <td>Keycloak · Zitadel</td>
+            <td>
+              <a href="https://github.com/keycloak/keycloak">keycloak/keycloak</a>
+              {" · "}
+              <a href="https://github.com/zitadel/zitadel">zitadel/zitadel</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Real-time voice (optional)</td>
+            <td>kyutai Moshi</td>
+            <td>
+              <a href="https://github.com/kyutai-labs/moshi">
+                kyutai-labs/moshi
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Browse the full catalogue of European, mostly open-source providers on
+        the <Link href="/#categories">stack map</Link> — each open project now
+        links straight to its source.
+      </p>
+
       <h2>Launch checklist</h2>
       <ul>
         <li>Gateway deployed in EU region with auth</li>
